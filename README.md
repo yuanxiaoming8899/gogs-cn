@@ -1,105 +1,98 @@
-![gogs-brand](https://user-images.githubusercontent.com/2946214/146899259-6a8b58ad-8d6e-40d2-ab02-79dc6aadabbf.png)
-
-[![GitHub Workflow Status](https://img.shields.io/github/checks-status/gogs/gogs/main?logo=github&style=for-the-badge)](https://github.com/gogs/gogs/actions?query=branch%3Amain) [![Discord](https://img.shields.io/discord/382595433060499458.svg?style=for-the-badge&logo=discord)](https://discord.gg/9aqdHU7) [![Sourcegraph](https://img.shields.io/badge/view%20on-Sourcegraph-brightgreen.svg?style=for-the-badge&logo=sourcegraph)](https://sourcegraph.com/github.com/gogs/gogs)
-
-[简体中文](README_ZH.md)
-
-## 🔮 Vision
-
-The Gogs (`/gɑgz/`) project aims to build a simple, stable and extensible self-hosted Git service that can be set up in the most painless way. With Go, this can be done with an independent binary distribution across all platforms that Go supports, including Linux, macOS, Windows and ARM-based systems.
-
-## 📡 Overview
-
-- Please visit [our home page](https://gogs.io) for user documentation.
-- Please refer to [CHANGELOG.md](CHANGELOG.md) for list of changes in each releases.
-- Want to try it before doing anything else? Do it [online](https://try.gogs.io/gogs/gogs)!
-- Having trouble? Help yourself with [troubleshooting](https://gogs.io/docs/intro/troubleshooting.html) or ask questions in [Discussions](https://github.com/gogs/gogs/discussions).
-- Want to help with localization? Check out the [localization documentation](https://gogs.io/docs/features/i18n.html).
-- Ready to get hands dirty? Read our [contributing guide](.github/CONTRIBUTING.md).
-- Hmm... What about APIs? We have experimental support with [documentation](https://github.com/gogs/docs-api).
-
-## 💌 Features
-
-- User dashboard, user profile and activity timeline.
-- Access repositories via SSH, HTTP and HTTPS protocols.
-- User, organization and repository management.
-- Repository and organization webhooks, including Slack, Discord and Dingtalk.
-- Repository Git hooks, deploy keys and Git LFS.
-- Repository issues, pull requests, wiki, protected branches and collaboration.
-- Migrate and mirror repositories with wiki from other code hosts.
-- Web editor for quick editing repository files and wiki.
-- Jupyter Notebook and PDF rendering.
-- Authentication via SMTP, LDAP, reverse proxy, GitHub.com and GitHub Enterprise with 2FA.
-- Customize HTML templates, static files and many others.
-- Rich database backend, including PostgreSQL, MySQL, SQLite3 and [TiDB](https://github.com/pingcap/tidb).
-- Have localization over [31 languages](https://crowdin.com/project/gogs).
-
-## 💾 Hardware requirements
-
-- A Raspberry Pi or $5 Digital Ocean Droplet is more than enough to get you started. Some even use 64MB RAM Docker [CaaS](https://www.docker.com/blog/containers-as-a-service-caas/).
-- 2 CPU cores and 512MB RAM would be the baseline for teamwork.
-- Increase CPU cores when your team size gets significantly larger, memory footprint remains low.
-
-## 💻 Browser support
-
-- Please see [Semantic UI](https://github.com/Semantic-Org/Semantic-UI#browser-support) for specific versions of supported browsers.
-- The smallest resolution officially supported is **1024*768**, however the UI may still look right in smaller resolutions, but no promises or fixes.
-
-## 📜 Installation
-
-Make sure you install the [prerequisites](https://gogs.io/docs/installation) first.
-
-There are 6 ways to install Gogs:
-
-- [Install from binary](https://gogs.io/docs/installation/install_from_binary.html)
-- [Install from source](https://gogs.io/docs/installation/install_from_source.html)
-- [Install from packages](https://gogs.io/docs/installation/install_from_packages.html)
-- [Ship with Docker](https://github.com/gogs/gogs/tree/main/docker)
-- [Try with Vagrant](https://github.com/geerlingguy/ansible-vagrant-examples/tree/master/gogs)
-
-### Deploy to cloud
-
-- [Cloudron](https://www.cloudron.io/store/io.gogs.cloudronapp.html)
-- [Sandstorm](https://github.com/cem/gogs-sandstorm)
-- [sloppy.io](https://github.com/sloppyio/quickstarters/tree/master/gogs)
-- [YunoHost](https://github.com/YunoHost-Apps/gogs_ynh)
-- [DPlatform](https://github.com/DFabric/DPlatform-Shell)
-- [LunaNode](https://github.com/LunaNode/launchgogs)
-- [alwaysdata](https://www.alwaysdata.com/en/marketplace/gogs/)
-
-### Tutorials
-
-- [Private Git Web Portal in Raspberry PI With Gogs](https://peppe8o.com/private-git-web-portal-in-raspberry-pi-with-gogs/)
-- [How To Set Up Gogs on Ubuntu 14.04](https://www.digitalocean.com/community/tutorials/how-to-set-up-gogs-on-ubuntu-14-04)
-- [Run your own GitHub-like service with the help of Docker](https://blog.hypriot.com/post/run-your-own-github-like-service-with-docker/)
-- [Dockerized Gogs git server and alpine postgres in 20 minutes or less](https://garthwaite.org/docker-gogs.html)
-- [Host Your Own Private GitHub with Gogs](https://eladnava.com/host-your-own-private-github-with-gogs-io/)
-- [使用 Gogs 搭建自己的 Git 服务器](https://blog.mynook.info/post/host-your-own-git-server-using-gogs/) (Chinese)
-- [阿里云上 Ubuntu 14.04 64 位安装 Gogs](https://my.oschina.net/luyao/blog/375654) (Chinese)
-- [Installing Gogs on FreeBSD](https://www.codejam.info/2015/03/installing-gogs-on-freebsd.html)
-- [How to install Gogs on a Linux Server (DigitalOcean)](https://www.youtube.com/watch?v=deSfX0gqefE)
-
-## 📦 Software, service and product support
-
-- [Fabric8](http://fabric8.io/) (DevOps)
-- [Jenkins](https://plugins.jenkins.io/gogs-webhook/) (CI)
-- [Puppet](https://forge.puppet.com/modules/Siteminds/gogs) (IT)
-- [Synology](https://www.synology.com) (Docker)
-- [Syncloud](https://syncloud.org/) (App Store)
-
-## 🙇‍♂️ Acknowledgments
-
-- Thanks [Egon Elbre](https://twitter.com/egonelbre) for designing the original version of the logo.
-- Thanks [Crowdin](https://crowdin.com/project/gogs) for sponsoring open source translation plan.
-- Thanks [DigitalOcean](https://www.digitalocean.com), [VPSServer](https://www.vpsserver.com/), [Hosted.nl](https://www.hosted.nl/), [BitLaunch](https://bitlaunch.io), and [MonoVM](https://monovm.com/linux-vps/) for sponsoring VPS services.
-- Thanks [KeyCDN](https://www.keycdn.com/) for sponsoring CDN service.
-- Thanks [Buildkite](https://buildkite.com) for sponsoring open source CI/CD plan.
-
-## 👋 Contributors
-
-- See [contributors page](https://github.com/gogs/gogs/graphs/contributors) for top 100 contributors.
-- See [TRANSLATORS](conf/locale/TRANSLATORS) for public list of translators.
-
-## ⚖️ License
-
-This project is under the MIT License. See the [LICENSE](https://github.com/gogs/gogs/blob/main/LICENSE) file for the full license text.
+<div class="Box-sc-g0xbh4-0 bJMeLZ js-snippet-clipboard-copy-unpositioned" data-hpc="true"><article class="markdown-body entry-content container-lg" itemprop="text"><p dir="auto"><a target="_blank" rel="noopener noreferrer nofollow" href="https://user-images.githubusercontent.com/2946214/146899259-6a8b58ad-8d6e-40d2-ab02-79dc6aadabbf.png"><img src="https://user-images.githubusercontent.com/2946214/146899259-6a8b58ad-8d6e-40d2-ab02-79dc6aadabbf.png" alt="戈格斯品牌" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="https://github.com/gogs/gogs/actions?query=branch%3Amain"><img src="https://camo.githubusercontent.com/cb5cb07f4d3c87a801518b0290b67dbc4331823780bbe5e69a449bcb1381778c/68747470733a2f2f696d672e736869656c64732e696f2f6769746875622f636865636b732d7374617475732f676f67732f676f67732f6d61696e3f6c6f676f3d676974687562267374796c653d666f722d7468652d6261646765" alt="GitHub 工作流程状态" data-canonical-src="https://img.shields.io/github/checks-status/gogs/gogs/main?logo=github&amp;style=for-the-badge" style="max-width: 100%;"></a> <a href="https://discord.gg/9aqdHU7" rel="nofollow"><img src="https://camo.githubusercontent.com/3fc98953a1c159d5868d5eebdbf7b805f362cb42879b4898f1efa5d703e16a1c/68747470733a2f2f696d672e736869656c64732e696f2f646973636f72642f3338323539353433333036303439393435382e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d646973636f7264" alt="不和谐" data-canonical-src="https://img.shields.io/discord/382595433060499458.svg?style=for-the-badge&amp;logo=discord" style="max-width: 100%;"></a> <a href="https://sourcegraph.com/github.com/gogs/gogs" rel="nofollow"><img src="https://camo.githubusercontent.com/349a243b0e6eae823c8c0fddb3709df46ec50a7668aa6299e5b0ab213fe4579b/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f766965772532306f6e2d536f7572636567726170682d627269676874677265656e2e7376673f7374796c653d666f722d7468652d6261646765266c6f676f3d736f757263656772617068" alt="源图" data-canonical-src="https://img.shields.io/badge/view%20on-Sourcegraph-brightgreen.svg?style=for-the-badge&amp;logo=sourcegraph" style="max-width: 100%;"></a></p>
+<p dir="auto"><a href="/gogs/gogs/blob/main/README_ZH.md">简体中文</a></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content--vision" class="anchor" aria-hidden="true" tabindex="-1" href="#-vision"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🔮愿景</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Gogs ( </font></font><code>/gɑgz/</code><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">) 项目旨在构建一个简单、稳定且可扩展的自托管 Git 服务，可以以最轻松的方式进行设置。</font><font style="vertical-align: inherit;">使用 Go，可以通过跨 Go 支持的所有平台（包括 Linux、macOS、Windows 和基于 ARM 的系统）的独立二进制发行版来完成此操作。</font></font></p>
+<h2 tabindex="-1" dir="auto"><a id="user-content--overview" class="anchor" aria-hidden="true" tabindex="-1" href="#-overview"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📡概述</font></font></h2>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请访问</font></font><a href="https://gogs.io" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">我们的主页</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以获取用户文档。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅</font></font><a href="/gogs/gogs/blob/main/CHANGELOG.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CHANGELOG.md</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以获取每个版本中的更改列表。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">想在做其他事情之前尝试一下吗？</font></font><a href="https://try.gogs.io/gogs/gogs" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在线</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">进行</font><font style="vertical-align: inherit;">！</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">遇到麻烦？</font><font style="vertical-align: inherit;">帮助您自己</font></font><a href="https://gogs.io/docs/intro/troubleshooting.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">排除故障或在</font></font></a><font style="vertical-align: inherit;"></font><a href="https://github.com/gogs/gogs/discussions"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">讨论</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">中提出问题</font><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">想帮助本地化吗？</font><font style="vertical-align: inherit;">查看</font></font><a href="https://gogs.io/docs/features/i18n.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本地化文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">准备好动手了吗？</font><font style="vertical-align: inherit;">阅读我们的</font></font><a href="/gogs/gogs/blob/main/.github/CONTRIBUTING.md"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献指南</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">嗯...API 怎么样？</font><font style="vertical-align: inherit;">我们有</font></font><a href="https://github.com/gogs/docs-api"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文档</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">的实验支持。</font></font></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content--features" class="anchor" aria-hidden="true" tabindex="-1" href="#-features"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">💌特点</font></font></h2>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用户仪表板、用户个人资料和活动时间表。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过 SSH、HTTP 和 HTTPS 协议访问存储库。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用户、组织和存储库管理。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">存储库和组织 webhooks，包括 Slack、Discord 和 Dingtalk。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">存储库 Git 挂钩、部署密钥和 Git LFS。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">存储库问题、拉取请求、wiki、受保护的分支和协作。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用来自其他代码主机的 wiki 迁移和镜像存储库。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">用于快速编辑存储库文件和 wiki 的 Web 编辑器。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Jupyter Notebook 和 PDF 渲染。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">通过 SMTP、LDAP、反向代理、GitHub.com 和 GitHub Enterprise 使用 2FA 进行身份验证。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">自定义 HTML 模板、静态文件等。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">丰富的数据库后端，包括 PostgreSQL、MySQL、SQLite3 和</font></font><a href="https://github.com/pingcap/tidb"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">TiDB</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">拥有超过</font></font><a href="https://crowdin.com/project/gogs" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">31 种语言的</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">本地化版本。</font></font></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content--hardware-requirements" class="anchor" aria-hidden="true" tabindex="-1" href="#-hardware-requirements"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">💾 硬件要求</font></font></h2>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">一个 Raspberry Pi 或 5 美元的 Digital Ocean Droplet 足以让您入门。</font><font style="vertical-align: inherit;">有些甚至使用 64MB RAM Docker </font></font><a href="https://www.docker.com/blog/containers-as-a-service-caas/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">CaaS</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">2 个 CPU 核心和 512MB RAM 将是团队合作的基准。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">当您的团队规模显着增大且内存占用量仍然较低时，请增加 CPU 核心。</font></font></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content--browser-support" class="anchor" aria-hidden="true" tabindex="-1" href="#-browser-support"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">💻 浏览器支持</font></font></h2>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅</font></font><a href="https://github.com/Semantic-Org/Semantic-UI#browser-support"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">语义 UI</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了解受支持浏览器的特定版本。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">官方支持的最小分辨率是</font></font><strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">1024*768</font></font></strong><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">，但是 UI 在较小的分辨率下可能看起来仍然正确，但没有承诺或修复。</font></font></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content--installation" class="anchor" aria-hidden="true" tabindex="-1" href="#-installation"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📜 安装</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">确保首先安装</font></font><a href="https://gogs.io/docs/installation" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">先决条件</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">。</font></font></p>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">有 6 种安装 Gogs 的方法：</font></font></p>
+<ul dir="auto">
+<li><a href="https://gogs.io/docs/installation/install_from_binary.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从二进制安装</font></font></a></li>
+<li><a href="https://gogs.io/docs/installation/install_from_source.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从源安装</font></font></a></li>
+<li><a href="https://gogs.io/docs/installation/install_from_packages.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">从包安装</font></font></a></li>
+<li><a href="https://github.com/gogs/gogs/tree/main/docker"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Docker 发送</font></font></a></li>
+<li><a href="https://github.com/geerlingguy/ansible-vagrant-examples/tree/master/gogs"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">尝试使用 Vagrant</font></font></a></li>
+</ul>
+<h3 tabindex="-1" dir="auto"><a id="user-content-deploy-to-cloud" class="anchor" aria-hidden="true" tabindex="-1" href="#deploy-to-cloud"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">部署到云端</font></font></h3>
+<ul dir="auto">
+<li><a href="https://www.cloudron.io/store/io.gogs.cloudronapp.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">云龙</font></font></a></li>
+<li><a href="https://github.com/cem/gogs-sandstorm"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">沙暴</font></font></a></li>
+<li><a href="https://github.com/sloppyio/quickstarters/tree/master/gogs">sloppy.io</a></li>
+<li><a href="https://github.com/YunoHost-Apps/gogs_ynh"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">尤诺主机</font></font></a></li>
+<li><a href="https://github.com/DFabric/DPlatform-Shell"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">数据平台</font></font></a></li>
+<li><a href="https://github.com/LunaNode/launchgogs"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">月神节点</font></font></a></li>
+<li><a href="https://www.alwaysdata.com/en/marketplace/gogs/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">总是数据</font></font></a></li>
+</ul>
+<h3 tabindex="-1" dir="auto"><a id="user-content-tutorials" class="anchor" aria-hidden="true" tabindex="-1" href="#tutorials"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">教程</font></font></h3>
+<ul dir="auto">
+<li><a href="https://peppe8o.com/private-git-web-portal-in-raspberry-pi-with-gogs/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Raspberry PI 中的私有 Git 门户网站与 Gogs</font></font></a></li>
+<li><a href="https://www.digitalocean.com/community/tutorials/how-to-set-up-gogs-on-ubuntu-14-04" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何在 Ubuntu 14.04 上设置 Gogs</font></font></a></li>
+<li><a href="https://blog.hypriot.com/post/run-your-own-github-like-service-with-docker/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 Docker 的帮助下运行您自己的类似 GitHub 的服务</font></font></a></li>
+<li><a href="https://garthwaite.org/docker-gogs.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 20 分钟或更短的时间内 Docker 化 Gogs git 服务器和 alpine postgres</font></font></a></li>
+<li><a href="https://eladnava.com/host-your-own-private-github-with-gogs-io/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">使用 Gogs 托管您自己的私有 GitHub</font></font></a></li>
+<li><a href="https://blog.mynook.info/post/host-your-own-git-server-using-gogs/" rel="nofollow">使用 Gogs 搭建自己的 Git 服务器</a> (Chinese)</li>
+<li><a href="https://my.oschina.net/luyao/blog/375654" rel="nofollow">阿里云上 Ubuntu 14.04 64 位安装 Gogs</a> (Chinese)</li>
+<li><a href="https://www.codejam.info/2015/03/installing-gogs-on-freebsd.html" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">在 FreeBSD 上安装 Gogs</font></font></a></li>
+<li><a href="https://www.youtube.com/watch?v=deSfX0gqefE" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">如何在 Linux 服务器上安装 Gogs (DigitalOcean)</font></font></a></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content--software-service-and-product-support" class="anchor" aria-hidden="true" tabindex="-1" href="#-software-service-and-product-support"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">📦 软件、服务和产品支持</font></font></h2>
+<ul dir="auto">
+<li><a href="http://fabric8.io/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Fabric8</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（开发运营）</font></font></li>
+<li><a href="https://plugins.jenkins.io/gogs-webhook/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">詹金斯</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(CI)</font></font></li>
+<li><a href="https://forge.puppet.com/modules/Siteminds/gogs" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">傀儡</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（IT）</font></font></li>
+<li><a href="https://www.synology.com" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">群晖</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">(Docker)</font></font></li>
+<li><a href="https://syncloud.org/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">同步云</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">（应用商店）</font></font></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-️-acknowledgments" class="anchor" aria-hidden="true" tabindex="-1" href="#️-acknowledgments"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">🙇&zwj;♂️致谢</font></font></h2>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">感谢</font></font><a href="https://twitter.com/egonelbre" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Egon Elbre</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">设计了徽标的原始版本。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">感谢</font></font><a href="https://crowdin.com/project/gogs" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Crowdin</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">赞助开源翻译计划。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">感谢</font></font><a href="https://www.digitalocean.com" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">DigitalOcean</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://www.vpsserver.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">VPSServer</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://www.hosted.nl/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Hosted.nl</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">、</font></font><a href="https://bitlaunch.io" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">BitLaunch</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">和</font></font><a href="https://monovm.com/linux-vps/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">MonoVM</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">赞助 VPS 服务。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">感谢</font></font><a href="https://www.keycdn.com/" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">KeyCDN</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">赞助 CDN 服务。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">感谢</font></font><a href="https://buildkite.com" rel="nofollow"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">Buildkite</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">赞助开源 CI/CD 计划。</font></font></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content--contributors" class="anchor" aria-hidden="true" tabindex="-1" href="#-contributors"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">👋 贡献者</font></font></h2>
+<ul dir="auto">
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅</font></font><a href="https://github.com/gogs/gogs/graphs/contributors"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">贡献者页面</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">了解前 100 位贡献者。</font></font></li>
+<li><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">请参阅</font></font><a href="/gogs/gogs/blob/main/conf/locale/TRANSLATORS"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">翻译人员</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">以获取公开的翻译人员列表。</font></font></li>
+</ul>
+<h2 tabindex="-1" dir="auto"><a id="user-content-️-license" class="anchor" aria-hidden="true" tabindex="-1" href="#️-license"><svg class="octicon octicon-link" viewBox="0 0 16 16" version="1.1" width="16" height="16" aria-hidden="true"><path d="m7.775 3.275 1.25-1.25a3.5 3.5 0 1 1 4.95 4.95l-2.5 2.5a3.5 3.5 0 0 1-4.95 0 .751.751 0 0 1 .018-1.042.751.751 0 0 1 1.042-.018 1.998 1.998 0 0 0 2.83 0l2.5-2.5a2.002 2.002 0 0 0-2.83-2.83l-1.25 1.25a.751.751 0 0 1-1.042-.018.751.751 0 0 1-.018-1.042Zm-4.69 9.64a1.998 1.998 0 0 0 2.83 0l1.25-1.25a.751.751 0 0 1 1.042.018.751.751 0 0 1 .018 1.042l-1.25 1.25a3.5 3.5 0 1 1-4.95-4.95l2.5-2.5a3.5 3.5 0 0 1 4.95 0 .751.751 0 0 1-.018 1.042.751.751 0 0 1-1.042.018 1.998 1.998 0 0 0-2.83 0l-2.5 2.5a1.998 1.998 0 0 0 0 2.83Z"></path></svg></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">⚖️ 许可证</font></font></h2>
+<p dir="auto"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">该项目已获得 MIT 许可。</font><font style="vertical-align: inherit;">请参阅</font></font><a href="https://github.com/gogs/gogs/blob/main/LICENSE"><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">许可证</font></font></a><font style="vertical-align: inherit;"><font style="vertical-align: inherit;">文件以获取完整的许可证文本。</font></font></p>
+</article></div>
